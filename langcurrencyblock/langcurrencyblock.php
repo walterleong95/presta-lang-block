@@ -2,14 +2,14 @@
 if (!defined('_PS_VERSION_'))
 	exit;
 
-class fx_langcurrencyblock extends Module
+class langcurrencyblock extends Module
 {
 	public function __construct()
 	{
-		$this->name = 'fx_langcurrencyblock';
+		$this->name = 'langcurrencyblock';
 		$this->tab = 'front_office_features';
 		$this->version = '1.0.0';
-		$this->author = 'Fusionex';
+		$this->author = 'Walter Leong';
 		$this->need_instance = 0;
 
 		$this->bootstrap = true;
@@ -27,7 +27,7 @@ class fx_langcurrencyblock extends Module
 
 	public function hookHeader()
 	{
-		$this->context->controller->addCSS($this->_path.'/views/css/fx_langcurrencyblock.css');
+		$this->context->controller->addCSS($this->_path.'/views/css/langcurrencyblock.css');
 	}
 	public function install()
 	{

@@ -27,14 +27,14 @@
 if (!defined('_PS_VERSION_'))
 	exit;
 
-class fx_languageblock extends Module
+class languageblock extends Module
 {
 	public function __construct()
 	{
-		$this->name = 'fx_languageblock';
+		$this->name = 'languageblock';
 		$this->tab = 'front_office_features';
 		$this->version = '1.0.0';
-		$this->author = 'Fusionex';
+		$this->author = 'Walter Leong';
 		$this->need_instance = 0;
 
 		parent::__construct();
@@ -108,7 +108,7 @@ class fx_languageblock extends Module
 	{
 		if (!$this->_prepareHook($params))
 			return;
-		return $this->display(__FILE__, 'fx_languageblock.tpl');
+		return $this->display(__FILE__, 'languageblock.tpl');
 	}
 
 	public function hookDisplayNav($params)
@@ -133,7 +133,7 @@ class fx_languageblock extends Module
 
 	public function hookDisplayHeader($params)
 	{
-		$this->context->controller->addCSS($this->_path.'fx_languageblock.css', 'all');
+		$this->context->controller->addCSS($this->_path.'languageblock.css', 'all');
 	}
 
 

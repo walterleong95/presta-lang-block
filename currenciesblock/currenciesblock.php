@@ -27,14 +27,14 @@
 if (!defined('_PS_VERSION_'))
 	exit;
 
-class fx_currenciesblock extends Module
+class currenciesblock extends Module
 {
 	public function __construct()
 	{
-		$this->name = 'fx_currenciesblock';
+		$this->name = 'currenciesblock';
 		$this->tab = 'front_office_features';
 		$this->version = '1.0.0';
-		$this->author = 'Fusionex';
+		$this->author = 'Walter Leong';
 		$this->need_instance = 0;
 
 		parent::__construct();
@@ -73,7 +73,7 @@ class fx_currenciesblock extends Module
 	public function hookDisplayTop($params)
 	{
 		if ($this->_prepareHook($params))
-			return $this->display(__FILE__, 'fx_currenciesblock.tpl');
+			return $this->display(__FILE__, 'currenciesblock.tpl');
 	}
 
 	public function hookDisplayNav($params)
@@ -100,6 +100,6 @@ class fx_currenciesblock extends Module
 	{
 		if (Configuration::get('PS_CATALOG_MODE'))
 			return;
-		$this->context->controller->addCSS(($this->_path).'fx_currenciesblock.css', 'all');
+		$this->context->controller->addCSS(($this->_path).'currenciesblock.css', 'all');
 	}
 }
