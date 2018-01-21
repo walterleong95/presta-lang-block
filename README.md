@@ -2,7 +2,7 @@
 Prestashop's customized language and currency block.
 
 ## Pre-requisites
-* Prestashop 1.6 and above
+* Prestashop 1.6 ++
 
 ## Installation
 1. Install the currency and language block module as a pre-requisite.
